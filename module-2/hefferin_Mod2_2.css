@@ -1,0 +1,57 @@
+/* Set the font size for HTML and body */
+html, body {
+    font-size: 16px;
+}
+
+/* Paragraph styles */
+p {
+    font-weight: 400;
+    line-height: 1.4em;
+}
+
+/* Heading styles */
+h1 {
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h2 {
+    font-weight: 500;
+    text-align: left;
+    padding-top: 15px;
+}
+
+/* Address styles */
+address {
+    text-align: center;
+}
+
+/* Website URL styles */
+a {
+    font-weight: bold;
+    font-size: 1.25em;
+    color: #4F3674;
+    text-decoration: none; /* Remove underline */
+}
+
+/* Hover effects for the website link */
+a:hover {
+    text-decoration: underline;
+    background-color: #D6A800;
+}
+
+/* Visited link styling */
+a:visited {
+    color: #8A5D9C; /* Example color for visited links */
+}
+
+/* Sentence class styles */
+.sentence {
+    font-style: italic;
+}
+
+/* Intro class styles */
+.intro {
+    text-indent: 2em;
+}

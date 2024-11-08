@@ -1,0 +1,79 @@
+/* Chelsea Hefferin CSD 340 Landing Page - Assignment 3.2 */
+
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif; /* Font for the page */
+    background-color: #f1f1f1; /* Light background for the page */
+    margin: 0;
+    padding: 0;
+}
+
+/* Main container styles */
+#container {
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+/* Heading 1 styling */
+h1 {
+    background-color: #6a0dad; /* Purple background */
+    color: #ffffff; /* White text color for contrast */
+    border: 1px solid #D6A800; /* Gold border */
+    padding: 10px;
+    margin: 10px 0;
+}
+
+/* Heading 2 styling */
+h2 {
+    background-color: #008080; /* Teal background */
+    color: #ffffff; /* White text color for contrast */
+    border: 1px solid #D6A800; /* Gold border */
+    padding: 10px;
+    margin: 10px 0;
+}
+
+/* Heading 3 styling */
+h3 {
+    background-color: #6a0dad; /* Purple background */
+    color: #ffffff; /* White text color for contrast */
+    border: 1px solid #D6A800; /* Gold border */
+    padding: 10px;
+    margin: 10px 0;
+}
+
+/* Heading 4 styling */
+h4 {
+    background-color: #008080; /* Teal background */
+    color: #ffffff; /* White text color for contrast */
+    border: 1px solid #D6A800; /* Gold border */
+    padding: 10px;
+    margin: 10px 0;
+}
+
+/* Anchor Tag Styles */
+a {
+    color: #008080; /* Teal color for links */
+    text-decoration: none; /* Remove underline */
+}
+
+/* Anchor Hover Style */
+a:hover {
+    color: #4b0082; /* Dark purple for hover effect */
+}
+
+/* Anchor Visited Style */
+a:visited {
+    color: #800080; /* Purple for visited links */
+}
+
+/* Unordered List Styles */
+ul {
+    list-style-type: none; /* Remove bullets */
+    padding-left: 0; /* Remove left padding */
+}
+
+/* List Item Styles */
+ul li {
+    margin-bottom: 10px; /* Add space between list items */
+}

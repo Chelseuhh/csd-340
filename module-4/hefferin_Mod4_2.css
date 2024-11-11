@@ -1,0 +1,66 @@
+/* Set the font size for HTML and body */
+html, body {
+    font-size: 16px;
+}
+
+/* Container styling */
+#container {
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* h1 title must be centered on the page */
+h1 {
+    text-align: center;
+    color: rgba(0, 102, 204, 1); /* Example color using rgba */
+}
+
+/* Image gallery styling */
+#image-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* CSS grid with three columns */
+    margin-top: 10%;
+    gap: 10px; /* Add some space between the divs */
+}
+
+/* Book div styling */
+.book {
+    border: 1px solid #ccc; /* Add border around each book div */
+    border-radius: 8px; /* Rounded corners for the border */
+    padding: 10px; /* Add padding inside the div */
+}
+
+.book h3 {
+    text-align: center;
+    color: rgba(0, 153, 51, 1); /* Example color using rgba */
+}
+
+.book figure {
+    text-align: center; /* Center the image in the div */
+}
+
+.book img {
+    width: 100%; /* Adjust the image width to fit within the parent div */
+    max-width: 150px; /* Set a maximum width for the images */
+    height: auto; /* Maintain the aspect ratio */
+}
+
+.book figcaption {
+    font-style: italic;
+    font-size: 0.75em;
+    color: rgba(153, 51, 255, 1); /* Example color using rgba */
+}
+
+/* Last div styling */
+#bottom-div {
+    width: 100%;
+    text-align: right;
+    margin-top: 60%;
+    margin-bottom: 20px;
+    float: right;
+}
+
+/* Hover effect for links */
+a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang='en'>
+<!--
+      Professor Sue Sampson
+       Assignment 9.3
+-->
+<head>
+    <meta charset="UTF-8">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <script>
+        var homeBody = "homebody";
+        var weasel = "weasel";
+        var tortoise = "tortoise";
+        var debate = "debating";
+    </script>
+</head>
+<body>
+    <h1>Assignment 9.3: JavaScript - Part 1</h1>
+    
+    <p>
+        I am very much a <span id="homebodySpan">__________</span>. If I never had to leave my house, I would be happier.
+    </p>
+    <p>
+        I have many pets, including 5 cats, 3 dogs, 8 fish, 2 moss frogs, 3 snakes, 4 geckos, 2 vampire crabs, a <span id="tortoiseSpan">__________</span>, 2 jumping spiders, 6 pigs, 13 chickens, and 6 ducks.
+    </p>
+    <p>
+        I am <span id="debateSpan">__________</span> on getting a <span id="weaselSpan">__________</span> or a rabbit in the near future.
+    </p>
+
+    <button type="button" onclick="document.getElementById('homebodySpan').innerHTML = homeBody">homebody</button>
+    <button type="button" onclick="document.getElementById('tortoiseSpan').innerHTML = tortoise">tortoise</button>
+    <button type="button" onclick="document.getElementById('debateSpan').innerHTML = debate">debating</button>
+    <button type="button" onclick="document.getElementById('weaselSpan').innerHTML = weasel">weasel</button>
+</body>
+</html>

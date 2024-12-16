@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <script>
+        let todoList = []; // Start with an empty to-do list
+
+        function addTodo() {
+            const todoItem = document.getElementById("todoInput").value;
+            if (todoItem) {
+                todoList.push(todoItem);
+                alert(`Added: ${todoItem}`);
+                document.getElementById("todoInput").value = ""; // Clear the input box
+            } else {
+                alert("Please enter a to-do item.");
+            }
+        }
+
+        function deleteLastTodo() {
+            if (todoList.length > 0) {
+                const removedItem = todoList.pop();
+                alert(`Deleted: ${removedItem}`);
+            } else {
+                alert("No items to delete!");
+            }
+        }
+
+        function displayTodos() {
+            const todoDisplay = document.getElementById("todoDisplay");
+            todoDisplay.innerHTML = "";
+
+            todoList.forEach((item, index) => {
+                const listItem = document.createElement("li");
+                listItem.textContent = `${index + 1}. ${item}`;
+                todoDisplay.appendChild(listItem);
+            });
+        }
+    </script>
+    <style>
+        #todoListContainer {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Assignment 11.2: JavaScript - Part 3</h1>
+
+    <h2>Instructions</h2>
+    <p>Welcome to the To-Do List application! Follow the steps below to manage your tasks:</p>
+    <ol>
+        <li>Enter a to-do item in the text box.</li>
+        <li>Click the "Add" button to add the item to your list.</li>
+        <li>Click the "Delete Last Entry" button to remove the last item from your list.</li>
+        <li>Click the "Display" button to view your current list of to-do items.</li>
+    </ol>
+
+    <label for="todoInput">Enter a to-do item:</label>
+    <input type="text" id="todoInput" name="todoInput">
+    
+    <button onclick="addTodo()">Add</button>
+    <button onclick="deleteLastTodo()">Delete Last Entry</button>
+    <button onclick="displayTodos()">Display</button>
+    
+    <div id="todoListContainer">
+        <br>
+        <h3>To-Do List:</h3>
+        <ul id="todoDisplay"></ul>
+    </div>
+</body>
+</html>

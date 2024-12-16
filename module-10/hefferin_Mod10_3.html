@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <script>
+        function changeImage(imageId, newSrc) {
+            document.getElementById(imageId).src = newSrc;
+        }
+    </script>
+    <style>
+        .hoverText {
+            transition: color 0.3s ease;
+        }
+        .hoverText:hover {
+            color: red;
+        }
+        .largerImage {
+            width: 300px;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Assignment 10.3: JavaScript - Part 2</h1>
+    
+    <div>
+        <p class="hoverText">Run your mouse over the image of the Devil's Bridge located in Germany to alter it:</p>
+        <a href="#" 
+           onmouseover="changeImage('devilsBridge', 'devils_bridge_2.jpg')" 
+           onmouseout="changeImage('devilsBridge', 'devils_bridge.jpg')">
+           <img id="devilsBridge" src="devils_bridge.jpg" alt="Devil's Bridge" style="width: 300px; height: 200px;">
+        </a>
+    </div>
+    <br>
+    <div>
+        <p class="hoverText">Run your mouse over the image of Frieren from one of my favorite anime's to alter it:</p>
+        <a href="#" 
+           onmouseover="changeImage('frieren', 'frieren_2.jpg')" 
+           onmouseout="changeImage('frieren', 'frieren.jpg')">
+           <img id="frieren" src="frieren.jpg" alt="Frieren" class="largerImage">
+        </a>
+    </div>
+</body>
+</html>

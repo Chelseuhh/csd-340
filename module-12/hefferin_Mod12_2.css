@@ -1,0 +1,98 @@
+/* Set the font size for HTML and body */
+html, body {
+    font-size: 16px;
+}
+
+/* Container styling */
+#container {
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* h1 title must be centered on the page */
+h1 {
+    text-align: center;
+}
+
+/* Side-by-side divs styling */
+#left-div, #right-div {
+    display: inline-block;
+    width: 45%;
+    vertical-align: top;
+    padding: 10px; /* Add padding inside the divs */
+    text-align: left; /* Align content to the left */
+}
+
+/* Left div border styling */
+#left-div {
+    border: 1px solid red;
+    border-radius: 15px;
+}
+
+/* Right div border styling */
+#right-div {
+    border: 1px dashed red;
+    border-radius: 15px;
+}
+
+/* Last div styling */
+#bottom-div {
+    width: 100%;
+    margin-top: 60%;
+    text-align: right;
+    margin-bottom: 20px;
+    float: right;
+}
+
+/* h3 tags styling */
+h3 {
+    font-weight: 500;
+}
+
+/* Lists styling */
+ol, ul {
+    font-weight: 300;
+    list-style-position: inside; /* Ensure list items are inside the borders */
+    padding: 10px; /* Add padding to lists */
+    margin-left: 0; /* Ensure lists are properly aligned */
+}
+
+/* Ordered list styling */
+ol {
+    list-style-position: inside;
+}
+
+/* Unordered list styling */
+ul {
+    list-style: upper-roman;
+    list-style-position: inside;
+}
+
+/* Hover effect for links */
+a:hover {
+    text-decoration: underline;
+}
+
+/* Button styling */
+button {
+    background-color: #008080; /* Teal background color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #005959; /* Darker teal color for hover */
+}
+
+/* Book list styling */
+#bookList ol {
+    margin-top: 10px;
+}

@@ -1,0 +1,88 @@
+<!-- Chelsea Hefferin Mod 12  changing mod 3 12/22/2024-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Chelsea Hefferin">
+    <meta name="description" content="Assignment 12.2 documentation">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <link rel="stylesheet" href="hefferin_Mod12_2.css">
+    <script>
+        // Array of top 10 books
+        const books = [
+            "The Ancient Magus' Bride",
+            "Ida B",
+            "Love and Misadventure",
+            "That Book of Perfectly Useless Information",
+            "To Kill a Mockingbird",
+            "Lord of the Flies",
+            "Secret Life of Bees",
+            "The Outsiders",
+            "Les Miserables",
+            "Diary of Anne Frank"
+        ];
+
+        // Function to display the array in ascending order
+        function displayTopToBottom() {
+            const sortedBooks = books.slice().sort();
+            document.getElementById('bookList').innerHTML = `<ol>${sortedBooks.map(book => `<li>${book}</li>`).join('')}</ol>`;
+        }
+
+        // Function to display the array in descending order
+        function displayBottomToTop() {
+            const sortedBooks = books.slice().sort().reverse();
+            document.getElementById('bookList').innerHTML = `<ol>${sortedBooks.map(book => `<li>${book}</li>`).join('')}</ol>`;
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Assignment 12.2: JavaScript - Part 4</h1>
+    </header>
+
+    <div id="container">
+        <div id="left-div">
+            <h2>Top 10 Books</h2>
+            <button onclick="displayTopToBottom()">Top to Bottom</button>
+            <button onclick="displayBottomToTop()">Bottom to Top</button>
+            <div id="bookList">
+                <ol>
+                    <li>The Ancient Magus' Bride</li>
+                    <li>Ida B</li>
+                    <li>Love and Misadventure</li>
+                    <li>That Book of Perfectly Useless Information</li>
+                    <li>To Kill a Mockingbird</li>
+                    <li>Lord of the Flies</li>
+                    <li>Secret Life of Bees</li>
+                    <li>The Outsiders</li>
+                    <li>Les Miserables</li>
+                    <li>Diary of Anne Frank</li>
+                </ol>
+            </div>
+        </div>
+
+        <div id="right-div">
+            <h3>5 Things I’ve Learned Since the Course Started</h3>
+            <ul>
+                <li>How to structure a basic HTML document</li>
+                <li>The importance of meta tags in HTML</li>
+                <li>Styling pages using external CSS</li>
+                <li>How to prioritize my time better</li>
+                <li>How to make my computer read my ebooks to me</li>
+            </ul>
+        </div>
+
+        <div id="bottom-div">
+            <a href="../index.html">Back to Landing Page</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Hefferin</p>
+        <p><a href="../index.html">Back to Landing Page</a></p>
+    </footer>
+</body>
+</html>
